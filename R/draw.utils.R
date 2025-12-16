@@ -232,7 +232,7 @@ numchains <- function(fit_obj){
   if("CmdStanFit" %in% class(fit_obj)){
     nchains <- posterior::nchains(fit_obj$draws())
   }else if("stanreg" %in% class(fit_obj)){
-    dd <-posterior::as_draws_df( f_rsa$stanfit )
+    dd <-posterior::as_draws_df( fit_obj$stanfit )
     nchains <-  length( unique( dd$.chain ))
   }
   nchains
