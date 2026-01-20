@@ -25,7 +25,7 @@ install.packages(
     "stringr",
     "ggplot2")	
 )
-devtools::install_github("HeineConK/bayesutils")
+devtools::install_github("f-heinke/bayesutils")
 ```
 
 ## Some Functionality demonstrated
